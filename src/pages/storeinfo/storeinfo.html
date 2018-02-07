@@ -1,0 +1,66 @@
+<!--
+  Generated template for the StoreinfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{storeInfo.storeName}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <!-- UX handler -->
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-spinner class="custom-spinner" *ngIf="apiLoader"></ion-spinner>
+  <div class="custom-msg msg-error" *ngIf="customErrorMsg">Oops! please check your internet connection</div>
+  <!-- End UX handler -->
+
+  <ion-card>
+    <div class="edge-relative">
+      <img src="{{server_url}}/gp_product/images/{{storeInfo.storeName}}.jpg"/>
+      <!-- call btn -->
+      <ion-fab right bottom edge>
+        <button ion-fab color="success" class="call-btn" (click)="callPhone(storeInfo.storeContactNumber)">
+            <ion-icon name="call"></ion-icon>
+        </button>
+      </ion-fab>
+
+    </div>
+
+
+    <ion-card-content>
+      <ion-card-title>
+        {{storeInfo.storeName}}
+      </ion-card-title>
+      <p>Store No: {{storeInfo.storeId}}</p>
+      <p><ion-icon name="call"></ion-icon> {{storeInfo.storeContactNumber}}</p>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-grid>
+    <ion-row>
+
+      <!-- item loop here -->
+        <ion-col col-6 col-sm-4 col-md-4 (click)="itemClick(cloth)" *ngFor="let cloth of clothes">
+          <img src="{{server_url}}/gp_product/images/{{cloth.productId}}.jpg"/>
+          <ion-row>
+            <ion-col class="cloth-caption">
+              <p><strong>Nrs. {{cloth.productPrice}}</strong></p>
+              <span class="muted-text">{{cloth.productName}}</span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

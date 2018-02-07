@@ -14,3 +14,49 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+$muted-color: #555555 !important;
+
+.tool-title{
+  text-align: center;
+}
+.muted-text{
+  color: $muted-color;
+}
+.img-contain{
+  height: 100%;
+  width:100%;
+}
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.text-center{
+  text-align: center;
+}
+
+.padding-none{
+  padding:0px;
+}
+
+.custom-spinner{
+  margin:20px 0;
+  left:50%;
+  transform:translate(-50%)
+}
+
+.custom-msg{
+    text-align: center;
+    color:#fff;
+    padding:13px 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.msg-error{
+  background-color: #D32F2F;
+}
+.muted-msg{
+  text-align: center;
+  color:#7a7a7a;
+  font-size:1.15rem;
+}

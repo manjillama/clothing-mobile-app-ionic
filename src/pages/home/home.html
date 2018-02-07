@@ -1,17 +1,54 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title class="tool-title">Labim</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+<ion-content class="card-background-page">
+
+  <!-- UX handler -->
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-spinner class="custom-spinner" *ngIf="apiLoader"></ion-spinner>
+    <!-- Error message if no network -->
+  <div class="custom-msg msg-error" *ngIf="customErrorMsg">Oops! please check your internet connection</div>
+  <!-- End UX handler -->
+
+
+  <!-- Banners -->
+  <ion-card>
+    <img src="./assets/imgs/banner2.jpg"/>
+  </ion-card>
+
+  <ion-grid class="padding-none">
+    <ion-row>
+
+      <ion-col col-6 col-sm-4 col-md-4 class="padding-none" *ngFor="let store of stores" (click)="goToStore(store)">
+        <ion-card class="store-wrapper">
+          <img src="{{server_url}}/gp_product/images/{{store.storeName}}.jpg" class="img-contain"/>
+          <div class="store-overlay"></div>
+          <div class="card-title">{{store.storeName}}</div>
+          <!-- <div class="card-subtitle">41 Listings</div> -->
+        </ion-card>
+      </ion-col>
+
+
+    </ion-row>
+  </ion-grid>
+
+  <!-- Banners -->
+  <ion-card>
+    <img src="./assets/imgs/banner1.jpg"/>
+  </ion-card>
+
+  <!-- <ion-card>
+    <img src="http://www.the-dvine.com/wp-content/uploads/2015/05/kor4.jpg"/>
+    <div class="store-overlay"></div>
+    <div class="banner-title">San Francisco</div>
+    <div class="card-subtitle">72 Listings</div>
+  </ion-card> -->
+
 </ion-content>

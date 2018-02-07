@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="tool-title">
+      Search
+    </ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="searchQuery" (change)="search($event)" autocorrect="off"></ion-searchbar>
+
+  <div padding class="search-demo-text" *ngIf="!searched">
+    <h3 class="text-center">Top Trending</h3>
+    <p>Leather Jackets</p>
+    <p>Vans</p>
+    <p>White Crop Tops</p>
+    <p>Jeans</p>
+    <p>Hoodie</p>
+    <p>Sneakers</p>
+  </div>
+
+  <ion-spinner class="custom-spinner" *ngIf="apiLoader"></ion-spinner>
+  <div class="custom-msg msg-error" *ngIf="customErrorMsg">Oops! please check your internet connection</div>
+  <!-- End UX handler -->
+
+  <ion-grid *ngIf="searched">
+    <ion-row>
+      <!-- item loop here -->
+        <ion-col col-6 col-sm-4 col-md-4 (click)="itemClick(cloth)" *ngFor="let cloth of clothes">
+          <img src="{{server_url}}/gp_product/images/{{cloth.productId}}.jpg"/>
+          <ion-row>
+            <ion-col class="cloth-caption">
+              <p><strong>Nrs. {{cloth.productPrice}}</strong></p>
+              <span class="muted-text">{{cloth.productName}}</span>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+  <p *ngIf="listFetchStatus" class="muted-msg">No more products :(</p>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)" *ngIf="!listFetchStatus">
+   <ion-infinite-scroll-content></ion-infinite-scroll-content>
+ </ion-infinite-scroll>
+
+</ion-content>

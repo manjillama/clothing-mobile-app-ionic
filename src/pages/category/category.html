@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="tool-title">
+      Category
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-segment [(ngModel)]="gender">
+    <ion-segment-button value="women">
+      Women
+    </ion-segment-button>
+    <!-- <ion-segment-button value="kids">
+      Kids
+    </ion-segment-button> -->
+    <ion-segment-button value="men">
+      Men
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="gender">
+
+    <ion-list *ngSwitchCase="'women'">
+      <ion-grid class="padding-none">
+        <ion-row>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('clothing','women')">
+            <h6>Clothing</h6>
+            <img src="./assets/imgs/women.png" class="category-img"/>
+          </ion-col>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('dress','women')">
+            <h6>Dress</h6>
+            <img src="./assets/imgs/party.png" class="category-img"/>
+          </ion-col>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('jeans','women')">
+            <h6>Jeans</h6>
+            <img src="./assets/imgs/jeans_women.png" class="category-img"/>
+          </ion-col>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('tops','women')">
+            <h6>Tops</h6>
+            <img src="./assets/imgs/women-tops.png" class="category-img"/>
+          </ion-col>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('shoes','women')">
+            <h6>Shoes</h6>
+            <img src="./assets/imgs/women_shoe.png" class="category-img"/>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-list><!-- women switch end -->
+
+    <!-- <ion-list *ngSwitchCase="'kids'">
+      <ion-grid class="padding-none">
+        <ion-row>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('clothing','kids')">
+            <h6>Clothing</h6>
+            <img src="./assets/imgs/women.png" class="category-img"/>
+          </ion-col>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('dress','kids')">
+            <h6>Dress</h6>
+            <img src="./assets/imgs/party.png" class="category-img"/>
+          </ion-col>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('jeans','kids')">
+            <h6>Jeans</h6>
+            <img src="./assets/imgs/jeans_women.png" class="category-img"/>
+          </ion-col>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('tops','kids')">
+            <h6>Tops</h6>
+            <img src="./assets/imgs/women-tops.png" class="category-img"/>
+          </ion-col>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('shoes','kids')">
+            <h6>Shoes</h6>
+            <img src="./assets/imgs/women_shoe.png" class="category-img"/>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-list>--><!-- women switch end -->
+
+    <ion-list *ngSwitchCase="'men'">
+      <ion-grid class="padding-none">
+        <ion-row>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('clothing','men')">
+            <h6>Clothing</h6>
+            <img src="./assets/imgs/men.png" class="category-img"/>
+          </ion-col>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('coats-jackets','men')">
+            <h6>Jackets</h6>
+            <img src="./assets/imgs/men_jacket.png" class="category-img"/>
+          </ion-col>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('jeans','men')">
+            <h6>Jeans</h6>
+            <img src="./assets/imgs/men_jeans.png" class="category-img"/>
+          </ion-col>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('tops','men')">
+            <h6>Tops</h6>
+            <img src="./assets/imgs/men_tops.png" class="category-img"/>
+          </ion-col>
+          <ion-col col-12 class="category-wrapper" (click)="cateCloth('shoes','men')">
+            <h6>Shoes</h6>
+            <img src="./assets/imgs/vans.png" class="category-img"/>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-list>
+  </div><!-- end of switch -->
+
+</ion-content>

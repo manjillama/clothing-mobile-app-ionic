@@ -1,3 +1,44 @@
 page-home {
+  .card-background-page {
 
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+
+    .card-title {
+      position: absolute;
+      top: 40%;
+      font-size: 1em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+    .banner-title {
+      position: absolute;
+      top: 40%;
+      font-size: 2em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+    // .store-wrapper{
+    //   height:150px;
+    // }
+    .card-subtitle {
+      padding-top:8px;
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
+    .store-overlay{
+      position: absolute;
+      top:0;
+      width: 100%;
+      height:100%;
+      background: rgba(0,0,0,0.3)
+    }
+  }
 }
