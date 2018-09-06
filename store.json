@@ -1,0 +1,25 @@
+[{
+	"storeId": 1,
+	"storeName": "Favors",
+	"storeContactNumber": "9988775647"
+}, {
+	"storeId": 11,
+	"storeName": "Gaze",
+	"storeContactNumber": "9988123647"
+}, {
+	"storeId": 12,
+	"storeName": "Best and Classic",
+	"storeContactNumber": "7766887678"
+}, {
+	"storeId": 21,
+	"storeName": "Blues Shoes",
+	"storeContactNumber": "8899887898"
+}, {
+	"storeId": 22,
+	"storeName": "Kat Fashion House",
+	"storeContactNumber": "9805544879"
+}, {
+	"storeId": 24,
+	"storeName": "Mia Mi",
+	"storeContactNumber": "5566545676"
+}]

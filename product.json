@@ -1,0 +1,56 @@
+[{
+	"productId": 24,
+	"productName": "Amber Slinky Asymmetric Wrap Midi Dress",
+	"productPrice": 2000.0,
+	"productDescription": "From cool-tone whites to block brights, we've got the everyday skater dresses and party-ready bodycon styles that are perfect for transitioning from day to play.",
+	"productCategory": "Clothing",
+	"productSubCategory": "dress",
+	"productGender": "Women",
+	"productInStock": 1,
+	"productManufacturer": "Amber",
+	"storeNo": 4
+}, {
+	"productId": 23,
+	"productName": "Claire Bandeau Thigh Split Midi Dress",
+	"productPrice": 4450.0,
+	"productDescription": "From cool-tone whites to block brights, we've got the everyday skater dresses and party-ready bodycon styles that are perfect for transitioning from day to play. ",
+	"productCategory": "Clothing",
+	"productSubCategory": "dress",
+	"productGender": "Women",
+	"productInStock": 4,
+	"productManufacturer": "Claire",
+	"storeNo": 6
+}, {
+	"productId": 9,
+	"productName": "Sleeveless Party Shorts",
+	"productPrice": 1200.0,
+	"productDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
+	"productCategory": "Clothing",
+	"productSubCategory": "dress",
+	"productGender": "Women",
+	"productInStock": 11,
+	"productManufacturer": "Lovin",
+	"storeNo": 11
+}, {
+	"productId": 4,
+	"productName": "Lindsey Sleeveless Midi Dress",
+	"productPrice": 343.0,
+	"productDescription": "Merry Christmas Ya Filthy Animal",
+	"productCategory": "Clothing",
+	"productSubCategory": "dress",
+	"productGender": "Women",
+	"productInStock": 2,
+	"productManufacturer": "Lidsey",
+	"storeNo": 11
+}, {
+	"productId": 3,
+	"productName": "SUSAN BLACK JUMPSUIT",
+	"productPrice": 343.0,
+	"productDescription": "You'll be a lean, mean style machine in this ultra sleek ensemble. Stretchy jumpsuit features a plunging V-neck,and zipper closure.",
+	"productCategory": "Clothing",
+	"productSubCategory": "dress",
+	"productGender": "Women",
+	"productInStock": 2,
+	"productManufacturer": "Susan",
+	"storeNo": 22
+}]

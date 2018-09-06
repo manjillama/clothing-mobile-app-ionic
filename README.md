@@ -16,6 +16,8 @@ Checkout this repo, install dependencies, then start application:
 
 You would need to install ionic cli if not already present. Pretty simple! enjoy.
 
+- Checkout store.json and product.json for API structure.
+
 ### Checkout the demo video
 
 Demo video [here](https://github.com/manjillama/clothing-mobile-app-ionic/blob/master/labim-app.mov?raw=true).
