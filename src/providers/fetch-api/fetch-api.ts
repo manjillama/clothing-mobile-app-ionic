@@ -23,6 +23,10 @@ export class FetchApiProvider {
     return this.http.get(this.server_url+'/stores/api')
       .map(res => res.json());
   }
+  getStoreInfo(storeId){
+    return this.http.get(this.server_url+'/stores/api/'+storeId)
+      .map(res => res.json());
+  }
   getStoreCloths(id){
     return this.http.get(this.server_url+'/stores/cloths/api/'+id)
       .map(res => res.json());

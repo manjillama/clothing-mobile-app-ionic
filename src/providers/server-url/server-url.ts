@@ -10,12 +10,14 @@ import { Injectable } from '@angular/core';
 export class ServerUrlProvider {
   url;
   constructor() {
-    // Change this global server variable
+    /* Change this global server variable for development mode*/
 
-    //http://10.0.2.2:8090
-    this.url="http://labim.vortexnepal.com";
-    //http://labim.vortexnepal.com/
-    // http://localhost:8090
+    /*
+      For cell devices: http://10.0.2.2:8090
+      Live: http://labim.vortexnepal.com/
+      Localhost: http://localhost:8090
+    */
+    this.url="http://localhost:8090";
   }
 
 }

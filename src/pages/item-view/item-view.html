@@ -15,10 +15,16 @@
 
 <ion-content padding>
   <div class="item-wrapper">
-    <img src="{{server_url}}/gp_product/images/{{productId}}.jpg"/>
+    <img src="{{server_url}}/gp_product/images/{{productId}}.jpg" (click)="viewImage()"/>
     <p class="item-price"><strong>Nrs. {{price}}</strong></p>
     <span class="muted-text">{{productName}}</span>
-    <hr/>
-    <p class="item-desc">{{desc}}</p>
+    <p class="muted-text">Brand: <span class="highlighted-custom">{{productManufacturer}}</span></p>
+    <p class="item-desc muted-text">{{desc}}</p>
+  </div>
+  <hr/>
+  <div>
+    <h6>More Information</h6>
+    <p class="muted-text">Sold By: <span class="highlighted-custom">{{storeName}}</span></p>
+    <p class="muted-text"><ion-icon name="call"></ion-icon> {{contactNo}}</p>
   </div>
 </ion-content>

@@ -4,6 +4,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HttpModule } from '@angular/http';
 import { CallNumber } from '@ionic-native/call-number';
+import { PhotoViewer } from '@ionic-native/photo-viewer';
 
 import { StoreinfoPage } from '../pages/storeinfo/storeinfo';
 import { SearchPage } from '../pages/search/search';
@@ -54,6 +55,7 @@ import { ServerUrlProvider } from '../providers/server-url/server-url';
     FetchApiProvider,
     ServerUrlProvider,
     CallNumber,
+    PhotoViewer,
   ]
 })
 export class AppModule {}

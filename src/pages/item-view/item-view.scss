@@ -10,4 +10,18 @@ page-item-view {
   .item-desc{
     font-size: 1.2rem
   }
+  h6{
+    margin:0;
+    font-weight: lighter;
+    font-size: 1.5rem;
+  }
+  .highlighted-custom{
+    color:#d13434;
+    font-weight: bold;
+  }
+
+  p{
+    margin: 5px 0;
+    font-size: 1.2rem
+  }
 }

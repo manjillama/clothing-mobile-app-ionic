@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FetchApiProvider} from '../../providers/fetch-api/fetch-api';
 import {ServerUrlProvider} from '../../providers/server-url/server-url';
+import { ItemViewPage } from '../item-view/item-view';
 
 @Component({
   selector: 'page-search',
@@ -60,6 +61,11 @@ export class SearchPage {
             this.apiLoader = false;
             this.customErrorMsg = true;
           });
+  }
+
+  itemClick(itemInfo){
+    this.navCtrl.push(ItemViewPage,itemInfo);
+    //console.log(itemInfo);
   }
 
   doInfinite(infiniteScroll) {
