@@ -9,7 +9,7 @@ Checkout this repo, install dependencies, then start application:
 
 ```
 > git clone https://github.com/manjillama/clothing-mobile-app-ionic.git
-> cd IonicClothingApp
+> cd clothing-mobile-app-ionic
 > npm install
 > ionic serve
 ```
@@ -22,7 +22,7 @@ Demo video [here](https://github.com/manjillama/clothing-mobile-app-ionic/blob/m
 
 ### Screenshots of app
 
-![alt tag](https://github.com/manjillama/clothing-mobile-app-ionic/blob/master/1.png)
-![alt tag](https://github.com/manjillama/clothing-mobile-app-ionic/blob/master/2.png)
 ![alt tag](https://github.com/manjillama/clothing-mobile-app-ionic/blob/master/3.png)
 ![alt tag](https://github.com/manjillama/clothing-mobile-app-ionic/blob/master/4.png)
+![alt tag](https://github.com/manjillama/clothing-mobile-app-ionic/blob/master/1.png)
+![alt tag](https://github.com/manjillama/clothing-mobile-app-ionic/blob/master/2.png)
