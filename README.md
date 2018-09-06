@@ -20,7 +20,9 @@ You would need to install ionic cli if not already present. Pretty simple! enjoy
 
 Demo video [here](https://github.com/manjillama/clothing-mobile-app-ionic/blob/master/labim-app.mov?raw=true).
 
-![alt tag](https://github.com/manjillama/angularjs-quizApp/blob/master/Screen%20Shot%202017-06-02%20at%209.58.05%20PM.png)
-![alt tag](https://github.com/manjillama/angularjs-quizApp/blob/master/Screen%20Shot%202017-06-02%20at%209.58.29%20PM.png)
-![alt tag](https://github.com/manjillama/angularjs-quizApp/blob/master/Screen%20Shot%202017-06-02%20at%209.58.45%20PM.png)
-![alt tag](https://github.com/manjillama/angularjs-quizApp/blob/master/Screen%20Shot%202017-06-02%20at%209.59.25%20PM.png)
+### Screenshots of app
+
+![alt tag](https://github.com/manjillama/clothing-mobile-app-ionic/blob/master/1.png)
+![alt tag](https://github.com/manjillama/clothing-mobile-app-ionic/blob/master/2.png)
+![alt tag](https://github.com/manjillama/clothing-mobile-app-ionic/blob/master/3.png)
+![alt tag](https://github.com/manjillama/clothing-mobile-app-ionic/blob/master/4.png)
